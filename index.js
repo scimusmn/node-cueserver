@@ -9,7 +9,7 @@ const socket = dgram.createSocket('udp4');
 const CUESERVER_IP = '169.254.80.104';
 const CUESERVER_PORT = 52737;
 
-// ASCII Message based
+// ASCII messages based
 // on CueServer's protocol.
 const CUE_1 = 'Cue 1 Go'; // Or 'Q1G'
 const CUE_2 = 'Cue 2 Go'; // Or 'Q2G'
