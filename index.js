@@ -1,6 +1,11 @@
+// Import dgram package.
 const dgram = require('dgram');
-const server = dgram.createSocket('udp4');
 
+// Create socket to send messages through.
+const socket = dgram.createSocket('udp4');
+
+// CueServer Info
+// Read from CueServer menu.
 const CUESERVER_IP = '169.254.80.104';
 const CUESERVER_PORT = 52737;
 
@@ -9,17 +14,17 @@ const CUESERVER_PORT = 52737;
 const CUE_1 = 'Cue 1 Go'; // Or 'Q1G'
 const CUE_2 = 'Cue 2 Go'; // Or 'Q2G'
 
-// Send messages to Cueserver over
-// ethernet. The Cueserver should
+// Send messages to CueServer over
+// ethernet. The CueServer should
 // already be programmed to do
 // something with these messages.
 function toCueServer(message) {
 
   console.log('toCueServer[ ' + message + ' ]');
 
-  server.send(message, 0, message.length, CUESERVER_PORT, CUESERVER_IP, (err) => {
+  socket.send(message, 0, message.length, CUESERVER_PORT, CUESERVER_IP, (err) => {
 
-    // Cuserver callback
+    // CueServer callback
     if (err) {
       console.log(err);
     }
@@ -39,3 +44,4 @@ setTimeout(() => {
   toCueServer(CUE_2);
 
 }, 10000);
+
