@@ -11,9 +11,8 @@ Simple example controlling cue server from node application.
 
 The CueServer listens form incoming UDP packets on port **52737**. The CueServer expects the messages in simple ASCII text format.
 
-The most common command you will need is for triggering preset Cues, which looks like:
-```Cue <Cue Number> Go```
+The most common command you will need is `Cue <Cue Number> Go`, which triggers preset Cues on the CueServer.
 
-[CueScript Protocol](http://docs.interactive-online.com/cs2/1.0/en/topic/cuescript-protocol)
+[Full CueScript Protocol](http://docs.interactive-online.com/cs2/1.0/en/topic/cuescript-protocol)
 
 
