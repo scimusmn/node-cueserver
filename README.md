@@ -16,8 +16,8 @@ The CueServer listens from incoming UDP packets on port **52737**. The CueServer
 
 The most common command you will need is `Cue <Cue Number> Go`, which triggers preset Cues on the CueServer.
 
-[Full CueScript Protocol](http://docs.interactive-online.com/cs2/1.0/en/topic/cuescript-protocol)
+[Full CueScript Protocol](http://docs.interactive-online.com/cs2/1.0/en/topic/cuescript-protocol) – List of possible cue messages.
 
-[CueServerAdmin](http://interactive-online.com/component/rsfiles/files?folder=CueServer%2FSoftware%2FCueServer+Admin) Can be helpful for troublehsooting connection to CueServer.
+[CueServerAdmin](http://interactive-online.com/component/rsfiles/files?folder=CueServer%2FSoftware%2FCueServer+Admin) – Can be helpful for troublehsooting connection to CueServer.
 
 
