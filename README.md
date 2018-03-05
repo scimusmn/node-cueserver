@@ -9,7 +9,7 @@ Simple example controlling cue server from node application.
   - Update IP address in `index.js` to match.
 
 
-The CueServer listens form incoming UDP packets on port **52737**. The CueServer expects the messages in simple ASCII text format.
+The CueServer listens from incoming UDP packets on port **52737**. The CueServer expects the messages in simple ASCII text format.
 
 The most common command you will need is `Cue <Cue Number> Go`, which triggers preset Cues on the CueServer.
 
